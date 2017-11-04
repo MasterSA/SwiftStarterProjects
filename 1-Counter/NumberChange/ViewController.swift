@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  NumberChange
 //
-//  Created by Azizur Rahman on 2017-11-04.
-//  Copyright © 2017 Bidween Inc. All rights reserved.
+//  Created by Aariz Rahman on 2017-11-04.
+//  Copyright © 2017 Letscodes Inc. All rights reserved.
 //
 
 import UIKit
