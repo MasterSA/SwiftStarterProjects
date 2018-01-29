@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drawapptwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMO-NK-2bT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2I-uf-iR0"/>
+                                    <action selector="closeWidthPopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="clf-J2-qj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-Sd-8fo" customClass="DesignableButton" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="489" y="25" width="269" height="102"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.0018558051670000001" green="0.56960707899999996" blue="0.57558363680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clearEditor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI5-Ca-r7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-Cm-R0d" customClass="DesignableButton" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="25" width="269" height="112"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Eraser">
+                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="brush" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgM-ke-Ldy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOM-Kk-Cns" customClass="DesignableButton" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="147" width="269" height="92"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Colors">
+                                    <color key="titleColor" red="0.0018558051669970155" green="0.56960707902908325" blue="0.57558363676071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showPopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgq-Ki-OCR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-Ga-Rqb" customClass="DesignableButton" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="489" y="147" width="269" height="92"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Brush Width">
+                                    <color key="titleColor" red="0.0018558051670000001" green="0.56960707899999996" blue="0.57558363680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showWidthPopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="8b2-De-Sv6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sG-be-VJG" customClass="DesighnableView" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="264" width="768" height="760"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-uu-O6m" customClass="DesighnableDrawView" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="760"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ke5-uu-O6m" firstAttribute="top" secondItem="9sG-be-VJG" secondAttribute="top" id="3ME-le-BMR"/>
+                                    <constraint firstAttribute="bottom" secondItem="ke5-uu-O6m" secondAttribute="bottom" id="Weh-Na-vxX"/>
+                                    <constraint firstItem="ke5-uu-O6m" firstAttribute="leading" secondItem="9sG-be-VJG" secondAttribute="leading" id="hIg-PP-vGR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ke5-uu-O6m" secondAttribute="trailing" id="xo0-9L-fCv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-OG-AMc" customClass="DesighnableView" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="192" y="-616" width="384" height="256"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="xdL-CU-q4P">
+                                        <rect key="frame" x="13" y="113" width="357.5" height="31"/>
+                                        <connections>
+                                            <action selector="changeWidth" destination="BYZ-38-t0r" eventType="valueChanged" id="geo-VX-xS0"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3w-wS-VeU">
+                                        <rect key="frame" x="0.0" y="143" width="383.5" height="113"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Choose Size"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="closeWidthPopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgv-iH-eew"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-FH-FTP">
+                                        <rect key="frame" x="0.0" y="25.5" width="384" height="82.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="31"/>
+                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="s1Z-FH-FTP" firstAttribute="height" secondItem="BCW-OG-AMc" secondAttribute="height" multiplier="0.3" constant="6" id="2Yl-ef-IsG"/>
+                                    <constraint firstItem="d2p-I2-smY" firstAttribute="bottom" secondItem="M3w-wS-VeU" secondAttribute="bottom" id="54R-zq-LvX"/>
+                                    <constraint firstItem="s1Z-FH-FTP" firstAttribute="centerY" secondItem="BCW-OG-AMc" secondAttribute="centerY" multiplier="0.5" constant="2.6666666666666643" id="A6e-Aw-doh"/>
+                                    <constraint firstItem="xdL-CU-q4P" firstAttribute="centerX" secondItem="BCW-OG-AMc" secondAttribute="centerX" id="H1d-iy-iN1"/>
+                                    <constraint firstItem="xdL-CU-q4P" firstAttribute="centerY" secondItem="BCW-OG-AMc" secondAttribute="centerY" id="LeD-mj-5eZ"/>
+                                    <constraint firstItem="M3w-wS-VeU" firstAttribute="top" secondItem="xdL-CU-q4P" secondAttribute="bottom" id="YYQ-bW-94q"/>
+                                    <constraint firstAttribute="trailing" secondItem="M3w-wS-VeU" secondAttribute="trailing" id="a9s-6n-U3L"/>
+                                    <constraint firstItem="M3w-wS-VeU" firstAttribute="leading" secondItem="d2p-I2-smY" secondAttribute="leading" id="awr-iF-WWk"/>
+                                    <constraint firstItem="d2p-I2-smY" firstAttribute="trailing" secondItem="M3w-wS-VeU" secondAttribute="trailing" id="bXL-fT-ylN"/>
+                                    <constraint firstItem="d2p-I2-smY" firstAttribute="bottom" secondItem="M3w-wS-VeU" secondAttribute="bottom" id="bZk-su-EY3"/>
+                                    <constraint firstItem="xdL-CU-q4P" firstAttribute="leading" secondItem="d2p-I2-smY" secondAttribute="leading" constant="15" id="py0-Jd-czP"/>
+                                    <constraint firstItem="s1Z-FH-FTP" firstAttribute="centerX" secondItem="BCW-OG-AMc" secondAttribute="centerX" id="r0N-3X-IMY"/>
+                                    <constraint firstItem="d2p-I2-smY" firstAttribute="trailing" secondItem="xdL-CU-q4P" secondAttribute="trailing" constant="15" id="rQn-bK-7xC"/>
+                                    <constraint firstItem="s1Z-FH-FTP" firstAttribute="width" secondItem="BCW-OG-AMc" secondAttribute="width" id="uft-Mh-dND"/>
+                                    <constraint firstItem="M3w-wS-VeU" firstAttribute="leading" secondItem="d2p-I2-smY" secondAttribute="leading" id="wV0-OA-dtH"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="d2p-I2-smY"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.69983343908629436" green="0.69983343908629436" blue="0.69983343908629436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKZ-0a-8hO" customClass="DesighnableView" customModule="drawapptwo" customModuleProvider="target">
+                                <rect key="frame" x="-675" y="249" width="230.5" height="775"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVh-vw-Ze3" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="137.5" y="92" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeToYellowLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIv-FX-GqY"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWh-KX-8yA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-Nk-khu" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="8" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToPinkLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="N02-pA-xN2"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgu-Av-bp1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-Xm-dt5" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="137.5" y="8" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToGreenLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="p46-CW-Gga"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNg-Jx-9QT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-Qr-dMH" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="48" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToGrayLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjp-5Q-tjX"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZr-jQ-VSV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDM-A6-nBu" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="92" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.49844968318939209" blue="0.070852257311344147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToOrangeLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyB-dl-HkS"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2b-9l-fZD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-NU-waa" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="137.5" y="48" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToBlackLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="zI4-HO-suy"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ea-lB-oXc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-Pw-ZeM" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="136" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="0.28005642359999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.28005642359999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToBlueLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1E-jP-vhg"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqP-gq-iIU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-ke-CBW" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="137.5" y="136" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.14665425009999999" blue="0.064143673779999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToRedLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLy-BO-K3n"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkt-fc-2oG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXh-Qc-XFS" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="180" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToBlueLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5a-xN-0XX"/>
+                                            <action selector="changeToBrownLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wg-k4-jMC"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="nv3-YU-9ch"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvA-A9-c1i" customClass="BounceButton" customModule="drawapptwo" customModuleProvider="target">
+                                        <rect key="frame" x="137.5" y="180" width="82.5" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeToTorqouisLines" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zm5-FY-jBV"/>
+                                            <action selector="closePopup" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYB-zs-jeO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91602553934010156" green="0.91602553934010156" blue="0.91602553934010156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HVh-vw-Ze3" firstAttribute="top" secondItem="OAO-NU-waa" secondAttribute="bottom" constant="10" id="05N-TL-ZoO"/>
+                                    <constraint firstItem="ZqE-Nk-khu" firstAttribute="height" secondItem="uUv-Xm-dt5" secondAttribute="height" id="0e8-a3-W0A"/>
+                                    <constraint firstItem="HVh-vw-Ze3" firstAttribute="width" secondItem="OAO-NU-waa" secondAttribute="width" id="1Ce-wP-dvZ"/>
+                                    <constraint firstItem="ZqE-Nk-khu" firstAttribute="leading" secondItem="R5b-V1-mY9" secondAttribute="leading" constant="10" id="2zz-g4-8IL"/>
+                                    <constraint firstItem="Fad-ke-CBW" firstAttribute="height" secondItem="HVh-vw-Ze3" secondAttribute="height" id="3QS-CM-KLT"/>
+                                    <constraint firstItem="ewD-Qr-dMH" firstAttribute="top" secondItem="ZqE-Nk-khu" secondAttribute="bottom" constant="6" id="3QW-iF-uq0"/>
+                                    <constraint firstItem="HVh-vw-Ze3" firstAttribute="top" secondItem="OAO-NU-waa" secondAttribute="bottom" constant="10" id="46b-sS-Uga"/>
+                                    <constraint firstItem="ewD-Qr-dMH" firstAttribute="width" secondItem="ZqE-Nk-khu" secondAttribute="width" id="5jL-xv-B2m"/>
+                                    <constraint firstItem="R5b-V1-mY9" firstAttribute="trailing" secondItem="Fad-ke-CBW" secondAttribute="trailing" constant="10" id="6lm-qJ-oG4"/>
+                                    <constraint firstItem="YXh-Qc-XFS" firstAttribute="leading" secondItem="R5b-V1-mY9" secondAttribute="leading" constant="10" id="9DN-S6-8C3"/>
+                                    <constraint firstItem="cHx-Pw-ZeM" firstAttribute="top" secondItem="cDM-A6-nBu" secondAttribute="bottom" constant="10" id="Dgx-5F-ybr"/>
+                                    <constraint firstItem="OAO-NU-waa" firstAttribute="width" secondItem="uUv-Xm-dt5" secondAttribute="width" id="J5B-EX-tS5"/>
+                                    <constraint firstItem="HVh-vw-Ze3" firstAttribute="height" secondItem="OAO-NU-waa" secondAttribute="height" id="Jsu-vR-PM3"/>
+                                    <constraint firstItem="YXh-Qc-XFS" firstAttribute="top" secondItem="cHx-Pw-ZeM" secondAttribute="bottom" constant="10" id="KgP-xy-Akc"/>
+                                    <constraint firstItem="cDM-A6-nBu" firstAttribute="top" secondItem="ewD-Qr-dMH" secondAttribute="bottom" constant="10" id="Lfj-nm-8dd"/>
+                                    <constraint firstItem="OAO-NU-waa" firstAttribute="height" secondItem="uUv-Xm-dt5" secondAttribute="height" id="NSH-bj-jXi"/>
+                                    <constraint firstItem="R5b-V1-mY9" firstAttribute="trailing" secondItem="OAO-NU-waa" secondAttribute="trailing" constant="10" id="SRa-nW-uVe"/>
+                                    <constraint firstItem="uUv-Xm-dt5" firstAttribute="width" secondItem="rKZ-0a-8hO" secondAttribute="width" multiplier="0.36" id="Uql-uW-WP1"/>
+                                    <constraint firstItem="cDM-A6-nBu" firstAttribute="leading" secondItem="R5b-V1-mY9" secondAttribute="leading" constant="10" id="Vtg-sS-E5j"/>
+                                    <constraint firstItem="R5b-V1-mY9" firstAttribute="trailing" secondItem="uUv-Xm-dt5" secondAttribute="trailing" constant="10" id="YMr-sn-ZOd"/>
+                                    <constraint firstItem="YXh-Qc-XFS" firstAttribute="width" secondItem="ZqE-Nk-khu" secondAttribute="width" id="ZfG-Yu-i93"/>
+                                    <constraint firstItem="ewD-Qr-dMH" firstAttribute="height" secondItem="ZqE-Nk-khu" secondAttribute="height" id="Zla-y1-DaH"/>
+                                    <constraint firstItem="xvA-A9-c1i" firstAttribute="top" secondItem="Fad-ke-CBW" secondAttribute="bottom" constant="10" id="ZwN-ar-MEH"/>
+                                    <constraint firstItem="uUv-Xm-dt5" firstAttribute="top" secondItem="R5b-V1-mY9" secondAttribute="top" constant="8" id="aYs-1c-iUR"/>
+                                    <constraint firstItem="ZqE-Nk-khu" firstAttribute="top" secondItem="R5b-V1-mY9" secondAttribute="top" constant="8" id="bba-YO-uHR"/>
+                                    <constraint firstItem="Fad-ke-CBW" firstAttribute="width" secondItem="HVh-vw-Ze3" secondAttribute="width" id="fjw-tr-uSR"/>
+                                    <constraint firstItem="YXh-Qc-XFS" firstAttribute="height" secondItem="ZqE-Nk-khu" secondAttribute="height" id="grs-kq-aDX"/>
+                                    <constraint firstItem="cHx-Pw-ZeM" firstAttribute="height" secondItem="cDM-A6-nBu" secondAttribute="height" id="hDn-jf-db5"/>
+                                    <constraint firstItem="R5b-V1-mY9" firstAttribute="trailing" secondItem="xvA-A9-c1i" secondAttribute="trailing" constant="10" id="jGd-8a-QKN"/>
+                                    <constraint firstItem="xvA-A9-c1i" firstAttribute="width" secondItem="ZqE-Nk-khu" secondAttribute="width" id="kZd-uk-UuT"/>
+                                    <constraint firstItem="xvA-A9-c1i" firstAttribute="height" secondItem="ZqE-Nk-khu" secondAttribute="height" id="lja-yT-yOi"/>
+                                    <constraint firstItem="cDM-A6-nBu" firstAttribute="height" secondItem="ewD-Qr-dMH" secondAttribute="height" id="nPx-OJ-tNH"/>
+                                    <constraint firstItem="cHx-Pw-ZeM" firstAttribute="width" secondItem="cDM-A6-nBu" secondAttribute="width" id="p2X-Nl-M18"/>
+                                    <constraint firstItem="R5b-V1-mY9" firstAttribute="trailing" secondItem="HVh-vw-Ze3" secondAttribute="trailing" constant="10" id="q2k-CD-VLE"/>
+                                    <constraint firstItem="ewD-Qr-dMH" firstAttribute="leading" secondItem="R5b-V1-mY9" secondAttribute="leading" constant="10" id="raa-hD-QDn"/>
+                                    <constraint firstItem="cHx-Pw-ZeM" firstAttribute="leading" secondItem="R5b-V1-mY9" secondAttribute="leading" constant="10" id="soq-Do-qMY"/>
+                                    <constraint firstItem="ZqE-Nk-khu" firstAttribute="width" secondItem="uUv-Xm-dt5" secondAttribute="width" id="tZg-9u-g3f"/>
+                                    <constraint firstItem="OAO-NU-waa" firstAttribute="top" secondItem="uUv-Xm-dt5" secondAttribute="bottom" constant="6" id="txg-ss-YFi"/>
+                                    <constraint firstItem="cDM-A6-nBu" firstAttribute="top" secondItem="ewD-Qr-dMH" secondAttribute="bottom" constant="10" id="wxE-03-HhA"/>
+                                    <constraint firstItem="Fad-ke-CBW" firstAttribute="top" secondItem="HVh-vw-Ze3" secondAttribute="bottom" constant="10" id="zhb-V0-6rQ"/>
+                                    <constraint firstItem="cDM-A6-nBu" firstAttribute="width" secondItem="ewD-Qr-dMH" secondAttribute="width" id="zvR-rw-GSn"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="R5b-V1-mY9"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.5471635618027122" green="0.55258102281065979" blue="0.55258102281065979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ccU-Sd-8fo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="0iw-um-ETf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rKZ-0a-8hO" secondAttribute="bottom" id="4cy-OU-lIm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccU-Sd-8fo" secondAttribute="trailing" constant="10" id="5ya-ez-9tH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9sG-be-VJG" secondAttribute="bottom" id="8ML-AF-YtZ"/>
+                            <constraint firstItem="bF5-Ga-Rqb" firstAttribute="height" secondItem="ccU-Sd-8fo" secondAttribute="height" id="BeF-pU-GXa">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="rKZ-0a-8hO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="CCu-eZ-1gv"/>
+                            <constraint firstItem="BCW-OG-AMc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="Ecm-fa-ms6"/>
+                            <constraint firstItem="9sG-be-VJG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fvb-JJ-B2z"/>
+                            <constraint firstItem="wIi-Cm-R0d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Gdh-Yp-pMY"/>
+                            <constraint firstItem="XOM-Kk-Cns" firstAttribute="height" secondItem="bF5-Ga-Rqb" secondAttribute="height" id="H5o-w3-Xf3"/>
+                            <constraint firstItem="rKZ-0a-8hO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-675" id="H7Y-f2-BeP"/>
+                            <constraint firstItem="PMO-NK-2bT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hrk-ge-ROx"/>
+                            <constraint firstItem="XOM-Kk-Cns" firstAttribute="top" secondItem="wIi-Cm-R0d" secondAttribute="bottom" constant="10" id="NLa-9h-tGa"/>
+                            <constraint firstItem="BCW-OG-AMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdO-Cu-NTX"/>
+                            <constraint firstItem="ccU-Sd-8fo" firstAttribute="height" secondItem="wIi-Cm-R0d" secondAttribute="height" id="S32-ap-dIA">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="BCW-OG-AMc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-1000" id="SIk-42-Xby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bF5-Ga-Rqb" secondAttribute="trailing" constant="10" id="XY7-KF-mH2"/>
+                            <constraint firstItem="bF5-Ga-Rqb" firstAttribute="top" secondItem="ccU-Sd-8fo" secondAttribute="bottom" constant="10" id="XsL-Ct-dxQ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="PMO-NK-2bT" secondAttribute="bottom" id="ZxD-CC-639"/>
+                            <constraint firstItem="BCW-OG-AMc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="aBc-mU-inY"/>
+                            <constraint firstItem="rKZ-0a-8hO" firstAttribute="top" secondItem="XOM-Kk-Cns" secondAttribute="bottom" constant="10" id="clk-tf-ERP"/>
+                            <constraint firstItem="XOM-Kk-Cns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="eCY-WF-u3T"/>
+                            <constraint firstItem="rKZ-0a-8hO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" constant="7" id="f38-5Q-acM">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-22"/>
+                            </constraint>
+                            <constraint firstItem="PMO-NK-2bT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ffa-Qt-gT2"/>
+                            <constraint firstItem="wIi-Cm-R0d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="hyY-hb-v0l"/>
+                            <constraint firstItem="PMO-NK-2bT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ojy-er-XeL"/>
+                            <constraint firstItem="9sG-be-VJG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qCo-TD-9ty"/>
+                            <constraint firstItem="ccU-Sd-8fo" firstAttribute="width" secondItem="wIi-Cm-R0d" secondAttribute="width" id="tbS-gb-yRn"/>
+                            <constraint firstItem="wIi-Cm-R0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uST-3B-txX"/>
+                            <constraint firstItem="bF5-Ga-Rqb" firstAttribute="width" secondItem="ccU-Sd-8fo" secondAttribute="width" id="uge-HH-Qzb"/>
+                            <constraint firstItem="XOM-Kk-Cns" firstAttribute="width" secondItem="bF5-Ga-Rqb" secondAttribute="width" id="upp-lu-IvM"/>
+                            <constraint firstItem="9sG-be-VJG" firstAttribute="top" secondItem="XOM-Kk-Cns" secondAttribute="bottom" constant="25" id="vcn-3P-gGY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundButtton" destination="PMO-NK-2bT" id="YNT-zk-hbe"/>
+                        <outlet property="brushButton" destination="wIi-Cm-R0d" id="gbP-Fm-j28"/>
+                        <outlet property="clearButton" destination="ccU-Sd-8fo" id="8qf-1T-qyf"/>
+                        <outlet property="colorButton" destination="XOM-Kk-Cns" id="XAy-Yd-rfS"/>
+                        <outlet property="colorView" destination="rKZ-0a-8hO" id="OyE-7J-zxd"/>
+                        <outlet property="drawView" destination="ke5-uu-O6m" id="eBO-11-ykD"/>
+                        <outlet property="sizeLabel" destination="s1Z-FH-FTP" id="cjO-FB-dul"/>
+                        <outlet property="sizeSlider" destination="xdL-CU-q4P" id="kK7-v2-xJy"/>
+                        <outlet property="slideConstraint" destination="H7Y-f2-BeP" id="pKD-tb-thS"/>
+                        <outlet property="widthSlideConstraint" destination="SIk-42-Xby" id="j7d-4c-uN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596.25" y="-551.4084507042254"/>
+        </scene>
+    </scenes>
+</document>

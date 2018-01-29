@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calendar Animation View Controller-->
+        <scene sceneID="HFa-Ze-Dlu">
+            <objects>
+                <viewController id="BiH-Rh-fPv" customClass="CalendarAnimationViewController" customModule="CatchTheBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2mR-j3-oQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqM-DX-Evs">
+                                <rect key="frame" x="40" y="426.5" width="240" height="33.5"/>
+                                <color key="backgroundColor" red="0.44593668675756459" green="0.95722121000289917" blue="0.33525081423494257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Animate"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="animateButtonTapped:" destination="BiH-Rh-fPv" eventType="touchUpInside" id="3Ji-tX-kj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTZ-QJ-GWI">
+                                <rect key="frame" x="40" y="373.5" width="240" height="33"/>
+                                <color key="backgroundColor" red="0.44593668679999998" green="0.95722121000000004" blue="0.33525081420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Go to Animation 2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YqM-DX-Evs" firstAttribute="top" secondItem="iTZ-QJ-GWI" secondAttribute="bottom" constant="20" id="2r9-GP-8aY"/>
+                            <constraint firstItem="YqM-DX-Evs" firstAttribute="height" secondItem="2mR-j3-oQ3" secondAttribute="height" multiplier="0.07" id="7iK-CL-gmV"/>
+                            <constraint firstItem="mXr-pH-vpD" firstAttribute="trailing" secondItem="iTZ-QJ-GWI" secondAttribute="trailing" constant="40" id="7tt-Vb-d8Z"/>
+                            <constraint firstItem="mXr-pH-vpD" firstAttribute="bottom" secondItem="YqM-DX-Evs" secondAttribute="bottom" constant="20" id="AwI-0E-gQG"/>
+                            <constraint firstItem="iTZ-QJ-GWI" firstAttribute="height" secondItem="YqM-DX-Evs" secondAttribute="height" id="BLv-SY-Yqd"/>
+                            <constraint firstItem="YqM-DX-Evs" firstAttribute="leading" secondItem="mXr-pH-vpD" secondAttribute="leading" constant="40" id="DZy-4K-0Fk"/>
+                            <constraint firstItem="iTZ-QJ-GWI" firstAttribute="leading" secondItem="mXr-pH-vpD" secondAttribute="leading" constant="40" id="Lgf-na-0Ba"/>
+                            <constraint firstItem="mXr-pH-vpD" firstAttribute="trailing" secondItem="YqM-DX-Evs" secondAttribute="trailing" constant="40" id="lQZ-hE-cAv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mXr-pH-vpD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9g-CJ-TkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35868.75" y="1438.75"/>
+        </scene>
+        <!--Intro Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IntroController" customModule="CatchTheBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltV-iY-0VH">
+                                <rect key="frame" x="96" y="250" width="128" height="48"/>
+                                <color key="backgroundColor" red="0.49404979989999998" green="0.76421169079999995" blue="0.95673381980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ltV-iY-0VH" secondAttribute="height" multiplier="4:1.5" id="Wbi-B2-Odx">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="65"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="22"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zNB-wY-XKX" kind="presentation" id="jTd-Eo-Bv7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to                                    Catch The Ball!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-s4-L6A">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.46074241788911746" green="0.67350816401295455" blue="0.95673381979695427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-2"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-d0-0rt">
+                                <rect key="frame" x="85" y="399" width="151" height="61"/>
+                                <color key="backgroundColor" red="0.43464282035417751" green="0.93855092005076146" blue="0.39533145766437749" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Animation"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BiH-Rh-fPv" kind="presentation" id="INd-09-Fmd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ltV-iY-0VH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CR0-Co-Ueq"/>
+                            <constraint firstItem="WGd-s4-L6A" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Gl0-UE-VSb"/>
+                            <constraint firstItem="WGd-s4-L6A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NOk-dz-Rbh"/>
+                            <constraint firstItem="Uix-d0-0rt" firstAttribute="height" secondItem="ltV-iY-0VH" secondAttribute="height" constant="13" id="Rg2-1k-oIX"/>
+                            <constraint firstItem="WGd-s4-L6A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vtl-L8-D7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uix-d0-0rt" secondAttribute="trailing" constant="84" id="Yab-LE-gT5"/>
+                            <constraint firstItem="WGd-s4-L6A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gtM-Fi-PP4"/>
+                            <constraint firstItem="ltV-iY-0VH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="hnl-Dm-jaZ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-80"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-93"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uix-d0-0rt" secondAttribute="bottom" constant="20" id="kxY-sK-Q8c"/>
+                            <constraint firstItem="ltV-iY-0VH" firstAttribute="top" secondItem="WGd-s4-L6A" secondAttribute="bottom" constant="10" id="qH1-R9-Bzc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="Uix-d0-0rt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="uDh-BF-nSN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LX2-QC-6ac"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36515.625" y="691.90140845070425"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="e1t-Ie-zTH">
+            <objects>
+                <viewController id="3Ls-KZ-llb" customClass="GameViewController" customModule="CatchTheBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6cE-eD-nk9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </sceneKitView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBU-L3-epR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37616" y="800"/>
+        </scene>
+        <!--Intro Controller-->
+        <scene sceneID="EvQ-GV-ncT">
+            <objects>
+                <viewController id="zNB-wY-XKX" customClass="introController" customModule="CatchTheBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwS-sD-xX0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sES-RR-V86">
+                                <rect key="frame" x="20" y="20" width="280" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBw-Td-C13">
+                                <rect key="frame" x="0.0" y="117" width="320" height="281"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">To play this game you have to catch one ball that falls from the sky and  if you do then you will earn one point or if you don't then you will lose one point and if you reach ten points you will win but you have to keep trying!</string>
+                                        <attributes>
+                                            <font key="NSFont" size="26" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG0-0p-78q">
+                                <rect key="frame" x="50" y="418" width="151" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49515223503112793" green="0.76561695337295532" blue="0.95722121000289917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <segue destination="3Ls-KZ-llb" kind="presentation" id="M5M-bp-DI5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uy2-xp-4yQ" firstAttribute="trailing" secondItem="sES-RR-V86" secondAttribute="trailing" constant="20" id="63o-Od-8NR"/>
+                            <constraint firstItem="sES-RR-V86" firstAttribute="leading" secondItem="uy2-xp-4yQ" secondAttribute="leading" constant="20" id="6Ig-oh-FhA"/>
+                            <constraint firstItem="sES-RR-V86" firstAttribute="height" secondItem="nwS-sD-xX0" secondAttribute="height" multiplier="0.2" id="CTB-Bh-ccc"/>
+                            <constraint firstAttribute="bottom" secondItem="GBw-Td-C13" secondAttribute="bottom" constant="82" id="JFV-t8-YHB">
+                                <variation key="heightClass=compact-widthClass=compact" constant="110"/>
+                            </constraint>
+                            <constraint firstItem="sES-RR-V86" firstAttribute="top" secondItem="uy2-xp-4yQ" secondAttribute="top" id="MHJ-Y3-XlA"/>
+                            <constraint firstItem="GBw-Td-C13" firstAttribute="leading" secondItem="uy2-xp-4yQ" secondAttribute="leading" id="Nh9-N1-LC8"/>
+                            <constraint firstItem="GBw-Td-C13" firstAttribute="trailing" secondItem="uy2-xp-4yQ" secondAttribute="trailing" id="Ykg-eO-cdv"/>
+                            <constraint firstItem="GBw-Td-C13" firstAttribute="top" secondItem="sES-RR-V86" secondAttribute="bottom" constant="1" id="xZ7-6n-L3D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uy2-xp-4yQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVb-Ei-4TM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36901.875" y="1438.75"/>
+        </scene>
+    </scenes>
+</document>

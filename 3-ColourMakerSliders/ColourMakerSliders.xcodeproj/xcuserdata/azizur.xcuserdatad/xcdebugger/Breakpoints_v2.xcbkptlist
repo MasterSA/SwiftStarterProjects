@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ColourMakerSliders/AppDelegate.swift"
+            timestampString = "532161897.931908"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColourMakerSliders.AppDelegate.__deallocating_deinit"
+                  moduleName = "ColourMakerSliders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Developer/AarizProjects/SwiftStarterProjects/ColourMakerSliders/ColourMakerSliders/AppDelegate.swift"
+                  timestampString = "532155709.90355"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColourMakerSliders.AppDelegate.__allocating_init() -&gt; ColourMakerSliders.AppDelegate"
+                  moduleName = "ColourMakerSliders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Developer/AarizProjects/SwiftStarterProjects/ColourMakerSliders/ColourMakerSliders/AppDelegate.swift"
+                  timestampString = "532155709.905868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColourMakerSliders.AppDelegate.init() -&gt; ColourMakerSliders.AppDelegate"
+                  moduleName = "ColourMakerSliders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Developer/AarizProjects/SwiftStarterProjects/ColourMakerSliders/ColourMakerSliders/AppDelegate.swift"
+                  timestampString = "532155709.907355"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ColourMakerSliders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Developer/AarizProjects/SwiftStarterProjects/ColourMakerSliders/ColourMakerSliders/AppDelegate.swift"
+                  timestampString = "532155709.908949"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
