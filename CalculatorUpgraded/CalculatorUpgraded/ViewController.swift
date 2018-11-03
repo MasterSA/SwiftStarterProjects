@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var textDisplay: UILabel!
-    var number1 = 
+    var number1:Float = 0.0
+    var number2:Float = 0.0
     var arithmeticOperator = ""
     var calculator = Calculator()
     var doesHavePoint = false
@@ -28,7 +29,8 @@ class ViewController: UIViewController {
     
     @IBAction func clear() {
         self.textDisplay.text = "0"
-        self.numbers = []
+        self.number1 = 0.0
+        self.number2 = 0.0
         self.arithmeticOperator = ""
         self.doesHavePoint = false
         

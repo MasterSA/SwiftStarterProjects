@@ -179,12 +179,12 @@
                                 <rect key="frame" x="0.0" y="512" width="320" height="105"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0Y-27-AW6" customClass="RoundView" customModule="FadingChainAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="117" y="6" width="80" height="27"/>
+                                        <rect key="frame" x="117" y="6" width="80" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.10000000000000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
+                                                <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="0.0"/>
@@ -255,7 +255,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Pa7-0n-uH8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GKo-gv-NYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lyH-2t-WaJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Wp-EP-tbu">
@@ -267,6 +266,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wH0-a3-73W"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKo-gv-NYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="-203"/>
         </scene>

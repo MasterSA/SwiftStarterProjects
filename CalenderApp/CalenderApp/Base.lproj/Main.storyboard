@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalenderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-4T-M51">
+                                <rect key="frame" x="0.0" y="199" width="320" height="369"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sV9-fS-SMr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="369"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7ol-gF-vIe">
+                                            <size key="itemSize" width="45.714285699999998" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="dayCell" id="kXs-U0-KTy" customClass="DayCollectionViewCell" customModule="CalenderApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.714285699999998" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="45.714285699999998" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SO-kf-tLH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="6SO-kf-tLH" firstAttribute="leading" secondItem="kXs-U0-KTy" secondAttribute="leading" id="9oR-f6-tP5"/>
+                                                    <constraint firstItem="6SO-kf-tLH" firstAttribute="top" secondItem="kXs-U0-KTy" secondAttribute="top" id="BQt-cb-viZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6SO-kf-tLH" secondAttribute="trailing" id="oIX-fW-S2T"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6SO-kf-tLH" secondAttribute="bottom" id="tiM-PH-X5g"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="label" destination="6SO-kf-tLH" id="VTp-fv-H8g"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sV9-fS-SMr" secondAttribute="bottom" id="Nt2-hN-KKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="sV9-fS-SMr" secondAttribute="trailing" id="h1s-69-bNC"/>
+                                    <constraint firstItem="sV9-fS-SMr" firstAttribute="leading" secondItem="QP7-4T-M51" secondAttribute="leading" id="qf9-t7-wZA"/>
+                                    <constraint firstItem="sV9-fS-SMr" firstAttribute="top" secondItem="QP7-4T-M51" secondAttribute="top" id="vJT-OX-Gyo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov, 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D8-Nm-T50">
+                                <rect key="frame" x="80" y="20" width="160" height="179"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfy-xj-oOU">
+                                <rect key="frame" x="240" y="20" width="80" height="179"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="nextMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnK-vt-yD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-5y-TBG">
+                                <rect key="frame" x="0.0" y="20" width="80" height="179"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="previousMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3df-wg-QNI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gfy-xj-oOU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5zz-0Q-LL3"/>
+                            <constraint firstItem="QP7-4T-M51" firstAttribute="top" secondItem="Gfy-xj-oOU" secondAttribute="bottom" id="Brz-Tu-QQ3"/>
+                            <constraint firstItem="nIe-5y-TBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lgd-tg-MCv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QP7-4T-M51" secondAttribute="trailing" id="NIt-8M-tHZ"/>
+                            <constraint firstItem="7D8-Nm-T50" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OSf-mP-PtI"/>
+                            <constraint firstItem="QP7-4T-M51" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ots-dq-ZGJ"/>
+                            <constraint firstItem="QP7-4T-M51" firstAttribute="top" secondItem="nIe-5y-TBG" secondAttribute="bottom" id="Qod-0O-ysy"/>
+                            <constraint firstAttribute="trailing" secondItem="Gfy-xj-oOU" secondAttribute="trailing" id="Vtc-3N-73y"/>
+                            <constraint firstItem="7D8-Nm-T50" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQE-pQ-Cgk"/>
+                            <constraint firstItem="7D8-Nm-T50" firstAttribute="leading" secondItem="nIe-5y-TBG" secondAttribute="trailing" id="m64-vA-sNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QP7-4T-M51" secondAttribute="bottom" id="rTe-9P-9h1"/>
+                            <constraint firstItem="QP7-4T-M51" firstAttribute="top" secondItem="7D8-Nm-T50" secondAttribute="bottom" id="rmf-l6-UFA"/>
+                            <constraint firstItem="Gfy-xj-oOU" firstAttribute="leading" secondItem="7D8-Nm-T50" secondAttribute="trailing" id="sKw-RR-K8K"/>
+                            <constraint firstItem="7D8-Nm-T50" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="wlV-y2-4nX"/>
+                            <constraint firstItem="nIe-5y-TBG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ybT-tP-t7d"/>
+                            <constraint firstItem="QP7-4T-M51" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="zeD-u2-Qvp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sV9-fS-SMr" id="KM6-ot-DQa"/>
+                        <outlet property="dateLabel" destination="7D8-Nm-T50" id="XvX-Wl-2Lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="105.63380281690141"/>
+        </scene>
+    </scenes>
+</document>

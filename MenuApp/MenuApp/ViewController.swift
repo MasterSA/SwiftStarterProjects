@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         slideInConstraint.constant = -675
         menuShowing = false
         backgroundButton.alpha = 0
-        self.menuView.layer.shadowOpacity = 1
-        self.menuView.layer.shadowRadius = 6
+        self.menuView.layer.shadowOpacity = 3
+        self.menuView.layer.shadowRadius = 9
         
     }
     

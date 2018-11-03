@@ -87,7 +87,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        
+        print("<#T##items: Any...##Any#>")
         cell?.textLabel?.text = companyName[indexPath.row]
         cell?.detailTextLabel?.text = " \(funny[indexPath.row]) "
         return cell!

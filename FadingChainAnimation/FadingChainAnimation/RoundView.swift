@@ -17,9 +17,9 @@ import UIKit
         
     }
     
-    @IBInspectable var borderColor : CGColor = UIColor.black.cgColor {
+    @IBInspectable var borderColor : UIColor = UIColor.black {
         didSet {
-            self.layer.borderColor = self.borderColor
+            self.layer.borderColor = self.borderColor.cgColor
             
         }
         

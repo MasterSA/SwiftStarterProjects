@@ -53,13 +53,19 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBj-yr-4h8">
                                         <rect key="frame" x="145" y="143" width="45" height="45"/>
+                                        <color key="backgroundColor" red="0.01586574874818325" green="0.58771240711212158" blue="0.43215513229370117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="DQd-bf-8ZK"/>
                                             <constraint firstAttribute="width" constant="45" id="xfi-HW-1Vc"/>
                                         </constraints>
-                                        <state key="normal" image="key">
+                                        <state key="normal" image="ic_inbox_white_48pt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.013028636574745178" green="0.59562462568283081" blue="0.4359363317489624" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,13 +84,20 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtW-lY-Az3">
                                 <rect key="frame" x="138" y="359" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.01586574874818325" green="0.58771240711212158" blue="0.43215513229370117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="AX3-XW-Dk0"/>
                                     <constraint firstAttribute="height" constant="45" id="yFA-ad-ZvK"/>
                                 </constraints>
-                                <state key="normal" image="key">
+                                <color key="tintColor" red="1" green="0.58771240711212158" blue="0.43215513229370117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_inbox_white_36pt">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwe-PY-xKt">
                                 <rect key="frame" x="115" y="239" width="90" height="90"/>
@@ -92,7 +105,7 @@
                                     <constraint firstAttribute="height" constant="90" id="Qyl-7M-OPK"/>
                                     <constraint firstAttribute="width" constant="90" id="ZvZ-Bu-bon"/>
                                 </constraints>
-                                <state key="normal" image="profile">
+                                <state key="normal" image="icons8-male-user-filled-100">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -108,6 +121,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hBv-mb-Uan" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Kn-Lt-CCW"/>
                             <constraint firstItem="uwe-PY-xKt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CRD-AI-doa"/>
@@ -130,7 +144,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_inbox_white_36pt" width="36" height="36"/>
+        <image name="ic_inbox_white_48pt" width="48" height="48"/>
+        <image name="icons8-male-user-filled-100" width="100" height="100"/>
         <image name="key" width="512" height="512"/>
-        <image name="profile" width="200" height="200"/>
     </resources>
 </document>

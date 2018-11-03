@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="Yellowtail-Regular.ttf">
+            <string>Yellowtail-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana Creating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEx-fl-XHi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="59"/>
+                                <fontDescription key="fontDescription" name="Yellowtail-Regular" family="Yellowtail" pointSize="46"/>
+                                <color key="textColor" red="0.91026431320000001" green="0.90867686270000003" blue="0.72903984789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="Yellowtail-Regular" family="Yellowtail" pointSize="53"/>
+                                </variation>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-0F-oKl">
+                                <rect key="frame" x="32" y="156" width="256" height="29"/>
+                                <color key="backgroundColor" red="0.59548611111111116" green="0.50459012540582904" blue="0.34274697009428051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Yellow Banana"/>
+                                    <segment title="Black Banana"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.82197571346756548" blue="0.0063205295138888395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8be-I9-l85">
+                                <rect key="frame" x="103" y="255.5" width="114" height="57"/>
+                                <color key="backgroundColor" red="0.80391418147208116" green="0.7410180449383722" blue="0.41843268251107019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8be-I9-l85" secondAttribute="height" multiplier="2:1" id="3eg-oy-g94"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Create"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25094934503237404" green="0.25099846720695496" blue="0.25094583630561829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jBL-0F-oKl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="1rp-Pz-LDC"/>
+                            <constraint firstItem="8be-I9-l85" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cid-YJ-VGS"/>
+                            <constraint firstItem="8be-I9-l85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IdL-NS-EEa"/>
+                            <constraint firstItem="fEx-fl-XHi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kk6-0i-nWR"/>
+                            <constraint firstItem="fEx-fl-XHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kx1-NM-D4P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fEx-fl-XHi" secondAttribute="trailing" id="dLU-Zw-Zq5"/>
+                            <constraint firstItem="jBL-0F-oKl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" constant="28" id="f1T-0o-lCz"/>
+                            <constraint firstItem="8be-I9-l85" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="wtY-ux-nq3"/>
+                            <constraint firstItem="jBL-0F-oKl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y5E-4F-Ncb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+</document>
